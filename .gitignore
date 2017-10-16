@@ -1,0 +1,6 @@
+.com.apple.timemachine.supported
+app/config/parameters.yml
+app/cache/*
+app/logs/*
+vendor
+web/bundles/*
