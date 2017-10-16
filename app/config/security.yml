@@ -29,3 +29,17 @@ security:
 
     access_control:
         #- { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY, requires_channel: https }
+
+
+# dans le cas ou meme les annonymes ne sont pas autoriser, utiliser cette construction
+
+#firewalls:
+#    # On crée un pare-feu uniquement pour le formulaire
+#    main_login:
+#        # Cette expression régulière permet de prendre /login (mais pas /login_check !)
+#        pattern:   ^/login$
+#        anonymous: true # On autorise alors les anonymes sur ce pare-feu
+#    main:
+#        pattern:   ^/
+#        anonymous: false
+#        # ...
